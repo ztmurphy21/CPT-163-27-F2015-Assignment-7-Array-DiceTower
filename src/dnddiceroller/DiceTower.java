@@ -17,9 +17,9 @@ import java.util.Random;
  * @author Paul Scarrone
  */
 public class DiceTower {
-  final int PANEL_COUNT = 3;
-  List<Die> dice;
-  int trayValue;
+  private final int PANEL_COUNT = 3;
+  private List<Die> dice;
+  private int trayValue;
 
   public DiceTower() {
 	this.dice = new ArrayList();
@@ -28,7 +28,6 @@ public class DiceTower {
   
   public DiceTower(List dice) {
 	this.dice = dice;
-        trayValue=0;
   }
   
  public int getTrayValue(){
